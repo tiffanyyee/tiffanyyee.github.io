@@ -1,0 +1,453 @@
+/***** BASE STYLES *****/
+
+html {
+	font-size: 16px;
+}
+
+body {
+    font-size: 1em;
+    line-height: 1.4;
+    font-family: 'Poppins', sans-serif;
+    text-align: left;
+}
+
+h1, 
+h2, 
+h3 {
+    font-family: 'Open Sans', sans-serif;
+}
+
+ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+a {
+    color: #38A3A5;
+    text-decoration: none;
+}
+
+p {
+    color: #FFFAFA;
+}
+
+.content-wrapper {
+    width: 100%;
+    margin: 0;
+}
+
+
+/***** HEADER STYLES *****/
+
+header {
+    background-color: #FFF;
+    color: #FFFAFA;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+}
+
+.hero-area {
+    background: url('../img/green-blue-gradient-bg.jpg') center no-repeat #FFF;
+    background-size: cover;
+    min-height: 820px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+header h1 {
+    font-size: 3.75em;
+    text-align: center;
+}
+
+header h2 {
+    font-family: 'Poppins', sans-serif;
+    font-size: 2em;
+    text-align: center;
+}
+
+header .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
+}
+
+.navigation {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+    width: 80%;
+}
+
+header nav {
+    font-size: 1.25em;
+    font-weight: 700;
+    text-transform: uppercase;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+}
+  
+header nav ul {
+    display: flex;
+    justify-content: space-around;
+    width: 100%;
+}
+  
+header nav ul li {
+    font-size: 1.125em;
+}
+
+.intro {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 80%;
+    padding: 0 0 80px;
+}
+
+
+/***** MAIN STYLES *****/
+
+main .content-wrapper {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    width: 100%;
+    margin: 0;
+}
+
+main h2 {
+    color: #38A3A5;
+    font-size: 1.25em;
+    text-align: center;
+    text-transform: uppercase;
+    width: 80%;
+    padding: 10px;
+}
+
+main h3 {
+    color: #FFFAFA;
+    font-size: 1em;
+    text-align: center;
+}
+
+/* Work Area */
+
+#work {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap; 
+}
+
+#work .content-wrapper {
+    background: #22577A;
+    min-height: 2000px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 10px 0 30px;
+}
+
+#work h2 {
+    margin-bottom: 40px;
+}
+
+#work img { 
+	max-width: 50%;
+}
+ 
+#work figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    margin: 0;
+}
+
+.project-description {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    flex-flow: column wrap;
+    text-align: center;
+}
+
+.border-bottom {
+    border-bottom: 2px dashed #38A3A5;
+    padding: 0 0 40px;
+}
+
+/* About Area */
+
+#about {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+#about .content-wrapper {
+    background: url('../img/green-blue-gradient-bg.jpg') center no-repeat #333;
+    background-size: cover;
+    min-height: 650px;
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+    padding: 10px 0;
+}
+
+#about img {
+    max-width: 90%;
+}
+
+#about figure {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 0 30px;
+    width: 50%;
+}
+
+.bio {
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-flow: row wrap;
+    padding: 15px 0 30px;
+}
+
+
+/***** FOOTER STYLES *****/
+
+footer {
+    display: flex;
+    justify-content: center;
+    flex-flow: row wrap;
+}
+
+footer .content-wrapper {
+    background: #22577A;
+    min-height: 425px;
+    display: flex;
+    justify-content: space-around;
+    flex-flow: column wrap;
+    margin: 0;
+    text-align: center;
+}
+
+span {
+    color: #38A3A5;
+    font-weight: 700;
+}
+
+.copyright {
+    font-size: 0.75em;
+    padding-top: 40px;
+}
+
+
+/***** MEDIA QUERIES *****/
+
+@media only screen and (min-width: 768px) {
+
+/* Header */
+ 
+    header .content-wrapper {
+        width: 100%;
+        align-items: flex-start;
+    }
+
+    .hero-area {
+        min-height: 1020px;
+    }
+
+    header nav {
+        width: 70%;
+        padding-top: 60px;
+    }
+
+    .navigation {
+        width: 70%;
+    }
+
+/* Main */
+
+    main h2 {
+        width: 80%;
+        padding: 20px;
+    }
+
+/* Work */
+
+    #work .content-wrapper {
+        min-height: 1700px;
+        padding-bottom: 100px;
+    }
+
+    #work figure {
+        width: 40%;
+        padding: 100px 60px 100px 0;
+    }
+
+    #work img {
+        max-width: 90%;
+    }
+
+    .project-description {
+        width: 40%;
+    }
+
+    .border-bottom {
+        border-bottom: none;
+        padding: 0;
+    }
+
+/* About */
+
+    #about .content-wrapper {
+        min-height: 600px;
+        align-items: center;
+        padding-bottom: 100px;
+    }
+
+    #about h2 {
+        padding: 20px;
+    }
+
+    #about figure {
+        width: 40%;
+        padding: 10px 20px;
+        margin: 0;
+    }
+
+    #about img {
+        max-width: 70%;
+    }
+
+    .bio {
+        width: 40%;
+        padding: 50px 10px;
+    }
+
+/* Contact */
+
+    footer .content-wrapper {
+        display: flex;
+        justify-content: space-evenly;
+        align-content: space-between;
+        align-items: center;
+        flex-flow: row wrap;
+    }
+
+    footer h2 {
+        padding: 30px 0 10px;
+    }
+
+    .contact-info {
+        width: 30%;
+    }
+
+    .copyright {
+        width: 80%;
+        padding-top: 70px;
+    }
+
+}
+
+@media only screen and (min-width: 1200px) {
+
+/* Header */
+
+    .hero-area {
+        min-height: 1370px;
+    }
+
+    header h1 {
+        width: 80%;
+    }
+
+    .navigation {
+        width: 40%;
+    }
+
+/* Work */
+
+    #work .content-wrapper {
+        padding-bottom: 150px;
+    }
+
+    #work h2 {
+        margin-bottom: 40px;
+    }
+
+    #work figure {
+        padding: 100px 0;
+    }
+
+    #work img {
+        max-width: 50%;
+    }
+
+/* About */
+
+    #about .content-wrapper {
+        min-height: 675px;
+        padding-bottom: 150px;
+    }
+
+    #about h2 {
+        padding-top: 30px;
+    }
+
+    #about figure {
+        width: 30%;
+        padding: 100px 10px;
+    }
+
+    #about img {
+        max-width: 60%;
+    }
+
+    .bio {
+        width: 25%;
+    }
+
+    p {
+        line-height: 1.5;
+    }
+
+/* Contact */
+
+    footer .content-wrapper {
+        justify-content: center;
+        min-height: 500px;
+        padding: 0 200px;
+    }
+
+    footer h2 {
+        padding-top: 50px;
+    }
+
+    .contact-info {
+        width: 30%;
+    }
+
+    .copyright {
+        padding-top: 70px;
+    }
+
+}
